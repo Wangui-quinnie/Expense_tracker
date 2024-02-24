@@ -2,6 +2,12 @@ Jobwave
 
 Welcome to our Job Posting Website! This project is built using Flask, Python,Mysql, and Bootstrap, providing a user-friendly platform for job seekers and employers to connect.
 
+
+Screenshot (136).png
+Screenshot (137).png
+Screenshot (138).png
+
+
 **Features
 
 Job Listings: Browse through a comprehensive list of job postings.
