@@ -27,6 +27,7 @@ def apply_to_job(id):
   add_application_to_db(id, data)
   return render_template("application_submitted.html", application=data, job=job)
 
+
 @app.route("/api/job/<id>")
 def show_job_json(id):
   job = get_job_from_db(id)
