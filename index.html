@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jobwave Careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      #banner {
+        height: 320px;
+        width:  100%;
+        object-fit: cover;
+        margin-bottom; 16px;
+      }
+    </style>
+
+  </head> 
+  
+  <body>
+    {% include 'navbar.html' %}
+    <img class="img-fluid" id="banner"src="static/banner.jpeg">
+   <div class="container">
+    <h1 class="text-center mt-2 mb-4">Jobwave Jobs</h1> 
+    <div class="row" style="margin-bottom:16px">
+      <div class="col-md-6">
+    <p class="lead">
+      In this virtual realm, individuals of diverse backgrounds, experiences, and ambitions converge, seeking pathways to professional fulfillment and personal growth. With a few keystrokes, a plethora of possibilities unfolds before them, each job listing a potential gateway to new horizons.
+Jobwave embodies the spirit of possibility, serving as a conduit for the realization of dreams and the forging of new beginnings. We encapsulate the boundless potential of human endeavor and serve as beacons of hope in an ever-evolving professional landscape. So, the next time you peruse through our website, remember that amidst the listings and profiles lies a world brimming with promise and opportunity, just waiting to be explored. Perphaps,the most enchanting aspect of Jobwave jobs posting website lies in the stories we weave. Behind each application submitted lies a unique narrative—a tale of resilience, passion, and determination. From the aspiring writer landing their first editorial role to the seasoned engineer pursuing a new challenge, every applicant brings a narrative thread that enriches the tapestry of the job-seeking experience.
+    </p>
+      </div>
+      <div class="d-none d-md-block col-md-6">
+      <img src="static/people.jpg" style="height:320px; border-radius:4px;">
+      </div>
+    </div>
+    <h2 class="text-center mt-2 mb-4">Job Openings</h2>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitems.html' %}
+      {% endfor %}
+        
+    </div>
+    <div class="text-center">
+    <button class ="btn btn-primary btn-lg">Contact Us</button>
+    </div>
+   </div>
+    {% include 'footer.html' %}
+  </body>
+</html> 
